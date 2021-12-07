@@ -95,6 +95,7 @@ app.post("/account", (request, response) => {
 // vai passar por ele
 // app.use(verifyIfExistsAccountCPF);
 
+// *********SEGUNDA****-***
 // Se eu colocar na rota, só vai passar pela rota
 app.get("/statement", verifyIfExistsAccountCPF, (request, response) => {
     const { customer } = request;
